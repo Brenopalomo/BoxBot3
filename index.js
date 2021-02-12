@@ -622,7 +622,7 @@ const getRegisteredRandomId = () => {
                         })
                     
                              } else {
-                                 reply('Gunakan foto!')
+                                 reply('Use uma foto!')
                           }
                           await limitAdd(sender) 
                           break  
@@ -824,10 +824,10 @@ const getRegisteredRandomId = () => {
 				    client.sendMessage(from, yeh, text, {quoted: mek})
 			        break
 				case 'hidetag':
-				if (isBanned) return reply(mess.only.benned)    
+				if (isBanned) return reply(mess.apenas.benned)    
 				if (!isUser) return reply(mess.only.userB)
-					if (!isGroup) return reply(mess.only.group)
-					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
+					if (!isGroup) return reply(mess.apenas.grupo)
+					if (!isBotGroupAdmins) return reply(mess.apenas.Badmin)
 					var value = body.slice(9)
 					var group = await client.groupMetadata(from)
 					var member = group['participants']
